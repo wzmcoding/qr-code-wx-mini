@@ -16,7 +16,7 @@ Page({
   },
 
   getUrl(text = '123456') {
-      const qrcode = require('../../utils/qrcode.js');
+      const qrcode = require('./qrcode.js');
       const qr = qrcode(-1, 'H')
       qr.addData(text)
       qr.make()
